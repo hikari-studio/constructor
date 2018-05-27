@@ -4,6 +4,7 @@ html, body{
 }
 .header{
     background: url(../img/bg.jpeg) center fixed no-repeat;
+
 }
 .header_title{
     color: white;
@@ -22,13 +23,21 @@ html, body{
 
 .clients{
     background: url(../img/excavators.jpeg) center fixed no-repeat;
-    padding: 4em;
+    padding: 4em 0;
+
+    .meet{
+        color: #209cee;
+    }
 }
 
 .box{
-    background-color: transparent;
+    background-color: #209cee60;
     border: 2px solid #209cee;
     color: white;
+}
+
+.fa-heart{
+    color: red;
 }
 
 
