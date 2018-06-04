@@ -1,32 +1,57 @@
 html, body {
-  color: #09194F;
+  color: #000;
   font-family: 'Century Gothic', 'Open sans', sans-serif; }
 
 .header {
   background: url(../img/bg.jpeg) center fixed no-repeat; }
+  .header .header_title {
+    color: white;
+    font-size: 80px; }
+  .header .header_subtitle {
+    color: white; }
+  .header .navbar-item {
+    font-weight: 500;
+    color: #000;
+    -webkit-transition: 156ms ease-in-out;
+    transition: 156ms ease-in-out; }
 
-.header_title {
-  color: white;
-  font-size: 80px; }
+.level-item {
+  color: white; }
+  .level-item .title {
+    color: white; }
 
-.header_subtitle {
+.column .image {
+  cursor: pointer;
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in; }
+.column .image:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  z-index: 5; }
+
+.heading.title {
   color: white; }
 
+.section_title {
+  color: #209cee; }
+
+.section_two_description {
+  padding-bottom: 1.5em; }
+
 .project {
-  background: url(../img/projects.jpeg) center fixed no-repeat;
+  background: url(../img/excavators.jpeg) center fixed no-repeat;
   padding: 4em;
   margin: 4em 0; }
 
-.clients {
-  background: url(../img/excavators.jpeg) center fixed no-repeat;
-  padding: 4em 0; }
-  .clients .meet {
-    color: #209cee; }
-
 .box {
-  background-color: #209cee60;
-  border: 2px solid #209cee;
-  color: white; }
+  -webkit-transition: all 256ms ease-in;
+  transition: all 256ms ease-in; }
+
+.box:hover {
+  background-color: #209cee;
+  color: white;
+  -webkit-box-shadow: 11px 10px 20px 4px rgba(10, 10, 10, 0.1);
+          box-shadow: 11px 10px 20px 4px rgba(10, 10, 10, 0.1); }
 
 .fa-heart {
   color: red; }
@@ -34,7 +59,7 @@ html, body {
 @media (max-width: 650px) {
   .header_title {
     color: white;
-    font-size: 35px;
+    font-size: 35px !important;
     margin-top: -2em; }
 
   .header_subtitle {
